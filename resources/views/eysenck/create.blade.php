@@ -66,7 +66,7 @@
 
                                 @include('eysenck.includes.partial3')
 
-                                <button type="submit" class="btn btn-primary">enviar respuestas</button>
+                                <button type="submit" class="btn btn-primary btn-lg">ENVIAR RESPUESTAS</button>
 
                             </div>
                         </div>

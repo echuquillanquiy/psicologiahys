@@ -84,6 +84,12 @@
                                     </div>
                                 </div>
 
+                                <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+                                    <div class="mb-1">
+                                        <input type="text" id="diagnostico" name="dx" class="form-control"  autofocus>
+                                    </div>
+                                </div>
+
                                 <button type="submit" class="btn btn-primary btn-lg">ENVIAR RESPUESTAS</button>
 
                             </div>
@@ -100,47 +106,94 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('.e').on('change', function () {
+            // Función para obtener la suma de un grupo específico
+            function obtenerSuma(clase, resultadoId) {
                 // Inicializar la suma
                 var suma = 0;
 
                 // Iterar sobre todos los selects y sumar sus valores
-                $('.e').each(function () {
+                $(clase).each(function () {
                     suma += parseInt($(this).val()) || 0; // Convertir a entero y manejar posibles NaN
                 });
 
                 // Mostrar la suma en la vista
-                $('#totale').val(suma);
+                $(resultadoId).val(suma);
 
+                return suma;
+            }
+
+            // Evento cuando cambia el valor de los select con la clase 'e'
+            $('.e').on('change', function () {
+                // Obtener la suma y mostrarla en la vista
+                var suma = obtenerSuma('.e', '#totale');
+
+                // Obtener los valores de los otros dos inputs (suma2 y suma3)
+                var suma2 = parseFloat($('#suma2').val()) || 0;
+                var suma3 = parseFloat($('#suma3').val()) || 0;
+
+                // Obtener el diagnóstico llamando a la función
+                var diagnostico = obtenerDiagnostico(suma, suma2, suma3);
+
+                // Mostrar el diagnóstico en la vista o donde desees
+                $('#diagnostico').val(diagnostico);
             });
 
+            // Evento cuando cambia el valor del segundo input (suma2)
             $('.n').on('change', function () {
-                // Inicializar la suma
-                var suma2 = 0;
+                // Obtener la suma2 y mostrarla en la vista
+                var suma2 = obtenerSuma('.n', '#totaln');
 
-                // Iterar sobre todos los selects y sumar2 sus valores
-                $('.n').each(function () {
-                    suma2 += parseInt($(this).val()) || 0; // Convertir a entero y manejar posibles NaN
-                });
+                // Obtener los valores de los otros dos inputs (suma y suma3)
+                var suma = parseFloat($('#totale').val()) || 0;
+                var suma3 = parseFloat($('#suma3').val()) || 0;
 
-                // Mostrar la suma2 en la vista
-                $('#totaln').val(suma2);
+                // Obtener el diagnóstico llamando a la función
+                var diagnostico = obtenerDiagnostico(suma, suma2, suma3);
 
+                // Mostrar el diagnóstico en la vista o donde desees
+                $('#diagnostico').val(diagnostico);
             });
 
+            // Evento cuando cambia el valor del tercer input (suma3)
             $('.l').on('change', function () {
-                // Inicializar la suma
-                var suma3 = 0;
+                // Obtener la suma3 y mostrarla en la vista
+                var suma3 = obtenerSuma('.l', '#totall');
 
-                // Iterar sobre todos los selects y sumar3 sus valores
-                $('.l').each(function () {
-                    suma3 += parseInt($(this).val()) || 0; // Convertir a entero y manejar posibles NaN
-                });
+                // Obtener los valores de los otros dos inputs (suma y suma2)
+                var suma = parseFloat($('#totale').val()) || 0;
+                var suma2 = parseFloat($('#totaln').val()) || 0;
 
-                // Mostrar la suma3 en la vista
-                $('#totall').val(suma3);
+                // Obtener el diagnóstico llamando a la función
+                var diagnostico = obtenerDiagnostico(suma, suma2, suma3);
 
+                // Mostrar el diagnóstico en la vista o donde desees
+                $('#diagnostico').val(diagnostico);
             });
+
+            // Función para obtener el diagnóstico
+            function obtenerDiagnostico(coordenada1, coordenada2, coordenada3) {
+                // Lógica de condición basada en los valores de las coordenadas (ajústala según tus necesidades)
+                if (coordenada1 > 10 && coordenada1 < 14 && coordenada2 > 11 && coordenada2 < 16) {
+                    return 'TENDIENTE - MELANCOLICO';
+                } else if (coordenada1 < 11 && coordenada2 > 15) {
+                    return 'ALTAMENTE - MELANCOLICO';
+                } else if (coordenada1 > 10 && coordenada1 < 14 && coordenada2 > 6 && coordenada2 < 12) {
+                    return 'TENDIENTE - FLEMATICO';
+                } else if (coordenada1 < 11 && coordenada2 < 7) {
+                    return 'ALTAMENTE - FLEMATICO';
+                } else if (coordenada1 > 13 && coordenada1 < 17 && coordenada2 > 11 && coordenada2 < 16) {
+                    return 'TENDIENTE - COLERICO';
+                } else if (coordenada1 > 16 && coordenada2 > 15) {
+                        return 'ALTAMENTE - COLERICO';
+                } else if (coordenada1 > 13 && coordenada1 < 17 && coordenada2 > 6 && coordenada2 < 12) {
+                    return 'TENDIENTE - SANGUINEO';
+                } else if (coordenada1 > 16 && coordenada2 < 7) {
+                    return 'ALTAMENTE - SANGUINEO';
+                } else {
+                    return 'HOLA SOY EDUARDO';
+                }
+            }
         });
+
     </script>
 @endsection

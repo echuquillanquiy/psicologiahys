@@ -1,174 +1,544 @@
 <div class="col-lg-4 col-md-4 col-sm-12">
     <div class="row">
-        <label for="39" class="col-sm-10 col-form-label">39. Es Ud. generalmente una persona tolerante, ¿que no se molesta si las cosas no están perfectas?.</label>
+        <label for="89" class="col-sm-10 col-form-label">89.	Para poder resolver una situación que se presenta, analizo todas las posibilidades existentes.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select e" aria-label="Default select example" name="39" value="{{ old('39') }}">
+            <select class="form-select e" aria-label="Default select example" name="89" value="{{ old('89') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="40" class="col-sm-10 col-form-label">40. Sufre de los nervios?.</label>
+        <label for="90" class="col-sm-10 col-form-label">90.	Soy capaz de respetar a los demás.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select n" aria-label="Default select example" name="40" value="{{ old('40') }}">
+            <select class="form-select n" aria-label="Default select example" name="90" value="{{ old('90') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="41" class="col-sm-10 col-form-label">41. Le gustaría más planear cosas que hacer cosas?.</label>
+        <label for="91" class="col-sm-10 col-form-label">91.	No estoy contento(a) con mi vida.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select e" aria-label="Default select example" name="41" value="{{ old('41') }}">
+            <select class="form-select e" aria-label="Default select example" name="91" value="{{ old('91') }}">
                 <option value="">Elija</option>
-                <option value="0">SI</option>
-                <option value="1">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="42" class="col-sm-10 col-form-label">42. Deja algunas veces para mañana lo que debería hacer hoy día?.</label>
+        <label for="92" class="col-sm-10 col-form-label">92.	Prefiero seguir a otros a ser líder.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select l" aria-label="Default select example" name="42" value="{{ old('42') }}">
+            <select class="form-select n" aria-label="Default select example" name="92" value="{{ old('92') }}">
                 <option value="">Elija</option>
-                <option value="0">SI</option>
-                <option value="1">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="43" class="col-sm-10 col-form-label">43. Se pone nervioso (a) en lugares tales como ascensores, trenes o túneles?.</label>
+        <label for="93" class="col-sm-10 col-form-label">93.	Me resulta difícil enfrentar las cosas desagradables de la vida.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select n" aria-label="Default select example" name="43" value="{{ old('43') }}">
+            <select class="form-select e" aria-label="Default select example" name="93" value="{{ old('93') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="44" class="col-sm-10 col-form-label">44. ¿Cuándo hace nuevos amigos, es Ud. usualmente quien inicia la relación o invita a que se produzca?.</label>
+        <label for="94" class="col-sm-10 col-form-label">94.	Nunca he violado la ley.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select e" aria-label="Default select example" name="44" value="{{ old('44') }}">
+            <select class="form-select l" aria-label="Default select example" name="94" value="{{ old('94') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="45" class="col-sm-10 col-form-label">45. Sufre fuertes dolores de cabeza?.</label>
+        <label for="95" class="col-sm-10 col-form-label">95.	Disfruto de las cosas que me interesan.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select n" aria-label="Default select example" name="45" value="{{ old('45') }}">
+            <select class="form-select n" aria-label="Default select example" name="95" value="{{ old('95') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="46" class="col-sm-10 col-form-label">46. Siente generalmente que las cosas se arreglarán por sí solas y que terminarán bien de algún modo?.</label>
+        <label for="96" class="col-sm-10 col-form-label">96.	Me resulta relativamente fácil decirle a la gente lo que pienso.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select e" aria-label="Default select example" name="46" value="{{ old('46') }}">
+            <select class="form-select e" aria-label="Default select example" name="96" value="{{ old('96') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="47" class="col-sm-10 col-form-label">47. Le cuesta trabajo coger el sueño al acostarse en las noches?.</label>
+        <label for="97" class="col-sm-10 col-form-label">97.	Tiendo a exagerar.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select n" aria-label="Default select example" name="47" value="{{ old('47') }}">
+            <select class="form-select n" aria-label="Default select example" name="97" value="{{ old('97') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="48" class="col-sm-10 col-form-label">48. Ha dicho alguna vez mentiras en su vida?.</label>
+        <label for="98" class="col-sm-10 col-form-label">98.	Soy sensible a los sentimientos de las otras personas.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select l" aria-label="Default select example" name="48" value="{{ old('48') }}">
+            <select class="form-select e" aria-label="Default select example" name="98" value="{{ old('98') }}">
                 <option value="">Elija</option>
-                <option value="0">SI</option>
-                <option value="1">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="49" class="col-sm-10 col-form-label">49. Dice algunas veces lo primero que se le viene a la cabeza?.</label>
+        <label for="99" class="col-sm-10 col-form-label">99.	Mantengo buenas relaciones con los demás.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select e" aria-label="Default select example" name="49" value="{{ old('49') }}">
+            <select class="form-select n" aria-label="Default select example" name="99" value="{{ old('99') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="50" class="col-sm-10 col-form-label">50. Se preocupa durante un tiempo demasiado largo después de una experiencia embarazosa?.</label>
+        <label for="100" class="col-sm-10 col-form-label">100.	Estoy contento(a) con mi cuerpo.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select n" aria-label="Default select example" name="50" value="{{ old('50') }}">
+            <select class="form-select l" aria-label="Default select example" name="100" value="{{ old('100') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="51" class="col-sm-10 col-form-label">51. Se mantiene usualmente hermético (a) ó encerrado (a) en sí mismo (a), excepto con amigos muy íntimos.</label>
+        <label for="101" class="col-sm-10 col-form-label">101.	Soy una persona muy extraña.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select e" aria-label="Default select example" name="51" value="{{ old('51') }}">
+            <select class="form-select e" aria-label="Default select example" name="101" value="{{ old('101') }}">
                 <option value="">Elija</option>
-                <option value="0">SI</option>
-                <option value="1">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="52" class="col-sm-10 col-form-label">52. Se crea a menudo problemas por hacer cosas sin pensar?.</label>
+        <label for="102" class="col-sm-10 col-form-label">102.	Soy impulsivo(a).</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select n" aria-label="Default select example" name="52" value="{{ old('52') }}">
+            <select class="form-select n" aria-label="Default select example" name="102" value="{{ old('102') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="53" class="col-sm-10 col-form-label">53. Le gusta contar chistes y referir historias graciosas a sus amigos?.</label>
+        <label for="103" class="col-sm-10 col-form-label">103.	Me resulta difícil cambiar mis costumbres.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select e" aria-label="Default select example" name="53" value="{{ old('53') }}">
+            <select class="form-select e" aria-label="Default select example" name="103" value="{{ old('103') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="54" class="col-sm-10 col-form-label">54. Se le hace más fácil ganar que perder un juego?.</label>
+        <label for="104" class="col-sm-10 col-form-label">104.	Considero que es muy importante ser un(a) ciudadano(a) que respeta la ley.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select l" aria-label="Default select example" name="54" value="{{ old('54') }}">
+            <select class="form-select n" aria-label="Default select example" name="104" value="{{ old('104') }}">
                 <option value="">Elija</option>
-                <option value="0">SI</option>
-                <option value="1">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="55" class="col-sm-10 col-form-label">55. Se siente a menudo demasiado consciente de si mismo (a) o poco natural cuando está con sus superiores?.</label>
+        <label for="105" class="col-sm-10 col-form-label">105.	Disfruto mis vacaciones y los fines de semana.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select n" aria-label="Default select example" name="55" value="{{ old('55') }}">
+            <select class="form-select e" aria-label="Default select example" name="105" value="{{ old('105') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="56" class="col-sm-10 col-form-label">56. ¿Cuándo todas las probabilidades están contra Ud., piensa aun usualmente que vale la pena probar suerte? .</label>
+        <label for="106" class="col-sm-10 col-form-label">106.	En general tengo una actitud positiva para todo, aún cuando surgen problemas.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select e" aria-label="Default select example" name="56" value="{{ old('56') }}">
+            <select class="form-select l" aria-label="Default select example" name="106" value="{{ old('106') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
-        <label for="57" class="col-sm-10 col-form-label">57. Siente "sensaciones raras" en el abdomen antes de hacer algún hecho importante?.</label>
+        <label for="107" class="col-sm-10 col-form-label">107.	Tengo tendencia a depender de otros.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select n" aria-label="Default select example" name="57" value="{{ old('57') }}">
+            <select class="form-select n" aria-label="Default select example" name="107" value="{{ old('107') }}">
                 <option value="">Elija</option>
-                <option value="1">SI</option>
-                <option value="0">NO</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
+
+        <label for="108" class="col-sm-10 col-form-label">108.	Creo en mi capacidad para manejar los problemas más difíciles.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select e" aria-label="Default select example" name="108" value="{{ old('108') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="109" class="col-sm-10 col-form-label">109.	No me siento avergonzado(a) por nada de lo que he hecho hasta ahora.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select n" aria-label="Default select example" name="109" value="{{ old('109') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="110" class="col-sm-10 col-form-label">110.	Trato de aprovechar al máximo las cosas que me gustan y me divierten.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select e" aria-label="Default select example" name="110" value="{{ old('110') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="111" class="col-sm-10 col-form-label">111.	Los demás piensan que no me hago valer, que me falta firmeza.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select n" aria-label="Default select example" name="111" value="{{ old('111') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="112" class="col-sm-10 col-form-label">112.	Soy capaz de dejar de fantasear para volver a ponerme en contacto con la realidad.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select l" aria-label="Default select example" name="112" value="{{ old('112') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="113" class="col-sm-10 col-form-label">113.	Los demás opinan que soy una persona sociable.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select e" aria-label="Default select example" name="113" value="{{ old('113') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="114" class="col-sm-10 col-form-label">114.	Estoy contento(a) con la forma en que me veo.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select n" aria-label="Default select example" name="114" value="{{ old('114') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="115" class="col-sm-10 col-form-label">115.	Tengo pensamientos extraños que los demás no logran entender.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select e" aria-label="Default select example" name="115" value="{{ old('115') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="116" class="col-sm-10 col-form-label">116.	Me es difícil describir lo que siento.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select n" aria-label="Default select example" name="116" value="{{ old('116') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="117" class="col-sm-10 col-form-label">117.	Tengo mal carácter.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select e" aria-label="Default select example" name="117" value="{{ old('117') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="118" class="col-sm-10 col-form-label">118.	Por lo general, me trabo cuando pienso acerca de las diferentes maneras de resolver un problema.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select l" aria-label="Default select example" name="118" value="{{ old('118') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="119" class="col-sm-10 col-form-label">119.	Me es difícil ver sufrir a la gente.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select n" aria-label="Default select example" name="119" value="{{ old('119') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="120" class="col-sm-10 col-form-label">120.	Me gusta divertirme.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select e" aria-label="Default select example" name="120" value="{{ old('120') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="121" class="col-sm-10 col-form-label">121.	Me parece que necesito de los demás más de lo que ellos me necesitan.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select n" aria-label="Default select example" name="121" value="{{ old('121') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="122" class="col-sm-10 col-form-label">122.	Me pongo ansioso(a).</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select e" aria-label="Default select example" name="122" value="{{ old('122') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="123" class="col-sm-10 col-form-label">123.	No tengo días malos.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select n" aria-label="Default select example" name="123" value="{{ old('123') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="124" class="col-sm-10 col-form-label">124.	Intento no herir los sentimientos de los demás.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select l" aria-label="Default select example" name="124" value="{{ old('124') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="125" class="col-sm-10 col-form-label">125.	No tengo una buena idea de lo que quiero en la vida.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select e" aria-label="Default select example" name="125" value="{{ old('125') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="126" class="col-sm-10 col-form-label">126.	Me es difícil hacer valer mis derechos.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select n" aria-label="Default select example" name="126" value="{{ old('126') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="127" class="col-sm-10 col-form-label">127.	Me es difícil ser realista.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select e" aria-label="Default select example" name="127" value="{{ old('127') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="128" class="col-sm-10 col-form-label">128.	No mantengo relación son mis amistades.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select n" aria-label="Default select example" name="128" value="{{ old('128') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="129" class="col-sm-10 col-form-label">129.	Haciendo un balance de mis puntos positivos y negativos me siento bien conmigo mismo(a).</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select e" aria-label="Default select example" name="129" value="{{ old('129') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="130" class="col-sm-10 col-form-label">130.	Tengo una tendencia a explotar de cólera fácilmente.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select l" aria-label="Default select example" name="130" value="{{ old('130') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="131" class="col-sm-10 col-form-label">131.	Si me viera obligado(a) a dejar mi casa actual, me sería difícil adaptarme nuevamente.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select n" aria-label="Default select example" name="131" value="{{ old('131') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="132" class="col-sm-10 col-form-label">132.	En general, cuando comienzo algo nuevo tengo la sensación que voy a fracasar.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select e" aria-label="Default select example" name="132" value="{{ old('132') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <label for="133" class="col-sm-10 col-form-label">133.	He respondido sincera y honestamente a las frases anteriores.</label>
+        <div class="col-sm-2 mb-1">
+            <select class="form-select e" aria-label="Default select example" name="133" value="{{ old('133') }}">
+                <option value="">Elija</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
     </div>
 </div>

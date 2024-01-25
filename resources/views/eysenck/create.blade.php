@@ -68,25 +68,25 @@
 
                                 <div class="col-12 col-lg-2 col-sm-12 col-md-12 text-center">
                                     <div class="mb-1">
-                                        <input type="text" id="totale" name="suma_e" class="form-control">
+                                        <input type="hidden" id="totale" name="suma_e" class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col-12 col-lg-2 col-sm-12 col-md-12 text-center">
                                     <div class="mb-1">
-                                        <input type="text" id="totaln" name="suma_n" class="form-control">
+                                        <input type="hidden" id="totaln" name="suma_n" class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col-12 col-lg-2 col-sm-12 col-md-12 text-center">
                                     <div class="mb-1">
-                                        <input type="text" id="totall" name="suma_l" class="form-control">
+                                        <input type="hidden" id="totall" name="suma_l" class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col-12 col-lg-8 col-sm-12 col-md-12">
                                     <div class="mb-1">
-                                        <input type="text" id="diagnostico" name="dx" class="form-control"  autofocus>
+                                        <input type="hidden" id="diagnostico" name="dx" class="form-control"  autofocus>
                                     </div>
                                 </div>
 

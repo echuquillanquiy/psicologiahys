@@ -28,7 +28,7 @@
                 <img src="{{ asset('test/baron.png') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">INVENTARIO EMOCIONAL BARON</h5>
-                    <a href="{{ route('bournout.create') }}" class="btn btn-info">Click para acceder al examen</a>
+                    <a href="{{ route('baron.create') }}" class="btn btn-info">Click para acceder al examen</a>
                 </div>
             </div>
         </div>

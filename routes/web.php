@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BaronController;
 use App\Http\Controllers\BournoutController;
 use App\Http\Controllers\EysenckController;
 use Illuminate\Support\Facades\Auth;
@@ -29,4 +30,5 @@ Route::resource('bournout', BournoutController::class)->names('bournout')->middl
 
 Route::resource('eysenck', EysenckController::class)->names('eysenck')->middleware('auth');
 
+Route::resource('baron', BaronController::class)->names('baron')->middleware('auth');
 

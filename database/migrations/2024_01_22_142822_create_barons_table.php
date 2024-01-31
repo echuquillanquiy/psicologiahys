@@ -156,6 +156,31 @@ return new class extends Migration
             $table->integer('132')->nullable();
             $table->integer('133')->nullable();
 
+            $table->integer('resultadoS1')->nullable();
+            $table->integer('resultadoS2')->nullable();
+            $table->integer('resultadoS3')->nullable();
+            $table->integer('resultadoS4')->nullable();
+            $table->integer('resultadoS5')->nullable();
+            $table->integer('resultadoS6')->nullable();
+            $table->integer('resultadoS7')->nullable();
+            $table->integer('resultadoS8')->nullable();
+            $table->integer('resultadoS9')->nullable();
+            $table->integer('resultadoS10')->nullable();
+            $table->integer('resultadoS11')->nullable();
+            $table->integer('resultadoS12')->nullable();
+            $table->integer('resultadoS13')->nullable();
+            $table->integer('resultadoS14')->nullable();
+            $table->integer('resultadoS15')->nullable();
+            $table->integer('resultadoS16')->nullable();
+            $table->integer('resultadoS17')->nullable();
+
+            $table->integer('totalS1S5')->nullable();
+            $table->integer('totalS6S8')->nullable();
+            $table->integer('totalS9S11')->nullable();
+            $table->integer('totalS12S13')->nullable();
+            $table->integer('totalS14S15')->nullable();
+            $table->integer('totalS16S17')->nullable();
+
             $table->timestamps();
         });
     }

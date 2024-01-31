@@ -8,7 +8,7 @@
                     <div class="card-header text-center">
                         <h3>{{ __('INVENTARIO EMOCIONAL BARON - H&S OCCUPATIONAL SAC') }} - {{ \Carbon\Carbon::now()->format('d-m-Y') }}</h3>
                     </div>
-                    <form action="{{ route('bournout.store') }}" method="POST">
+                    <form action="{{ route('baron.store') }}" method="POST">
                         @csrf
                         <div class="card-body">
 
@@ -80,25 +80,35 @@
 
                                                 <div class="col-12 col-lg-2 col-sm-12 col-md-12 text-center">
                                                     <div class="mb-1">
-                                                        <input type="hidden" id="totale" name="suma_e" class="form-control">
+                                                        <input type="text" id="resultadoS1" name="resultadoS1" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS2" name="resultadoS2" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS3" name="resultadoS3" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS4" name="resultadoS4" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS5" name="resultadoS5" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS6" name="resultadoS6" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS7" name="resultadoS7" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS8" name="resultadoS8" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS9" name="resultadoS9" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS10" name="resultadoS10" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS11" name="resultadoS11" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS12" name="resultadoS12" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS13" name="resultadoS13" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS14" name="resultadoS14" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS15" name="resultadoS15" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS16" name="resultadoS16" class="form-control" placeholder="">
+                                                        <input type="text" id="resultadoS17" name="resultadoS17" class="form-control" placeholder="">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-12 col-lg-2 col-sm-12 col-md-12 text-center">
                                                     <div class="mb-1">
-                                                        <input type="hidden" id="totaln" name="suma_n" class="form-control">
-                                                    </div>
-                                                </div>
 
-                                                <div class="col-12 col-lg-2 col-sm-12 col-md-12 text-center">
-                                                    <div class="mb-1">
-                                                        <input type="hidden" id="totall" name="suma_l" class="form-control">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-12 col-lg-8 col-sm-12 col-md-12">
-                                                    <div class="mb-1">
-                                                        <input type="hidden" id="diagnostico" name="dx" class="form-control"  autofocus>
+                                                        <input type="text" id="totalS1S5" name="totalS1S5" placeholder="Total de S1 a S5">
+                                                        <input type="text" id="totalS6S8" name="totalS6S8" placeholder="Total de S6 a S8">
+                                                        <input type="text" id="totalS9S11" name="totalS9S11" placeholder="Total de S9 a S11">
+                                                        <input type="text" id="totalS12S13" name="totalS12S13" placeholder="Total de S12 a S13">
+                                                        <input type="text" id="totalS14S15" name="totalS14S15" placeholder="Total de S14 a S15">
+                                                        <input type="text" id="totalS16S17" name="totalS16S17" placeholder="Total de S16 a S17">
                                                     </div>
                                                 </div>
 
@@ -121,39 +131,52 @@
 @section('scripts')
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-        $(document).ready(function () {
-            // Escuchar el cambio en los selects con la clase 'respuesta'
-            $('.respuesta').on('change', function () {
-                // Inicializar la suma
-                var suma = 0;
-
-                // Iterar sobre todos los selects y sumar sus valores
-                $('.respuesta').each(function () {
-                    suma += parseInt($(this).val()) || 0; // Convertir a entero y manejar posibles NaN
-                });
-
-                // Mostrar la suma en la vista
-                $('#total').val(suma);
-
-                var divisionResultado = (suma / 132) * 100;
-                $('#percent').val(divisionResultado.toFixed(2));
-
-                var category = obtenerDiagnostico(divisionResultado);
-                $('#category').val(category);
-            });
-
-            function obtenerDiagnostico(resultado) {
-                // Lógica de condición basada en rangos (ajústala según tus necesidades)
-                if (resultado >= 0 && resultado <= 22) {
-                    return 'Ausencia de dificultades y estrés';
-                } else if (resultado > 23 && resultado <= 59) {
-                    return 'Baja presencia de dificultades y estrés';
-                } else if (resultado > 60 && resultado <= 90) {
-                    return 'Moderada presencia de dificultades y estrés';
-                } else {
-                    return 'Moderada presencia de dificultades y estrés';
-                }
+        // Función para calcular la suma de los elementos con una clase específica
+        function calcularSumaPorClase(clase) {
+            let elementos = document.getElementsByClassName(clase);
+            let suma = 0;
+            for (let i = 0; i < elementos.length; i++) {
+                suma += parseFloat(elementos[i].value) || 0; // Asegura que el valor sea un número
             }
-        });
+            return suma;
+        }
+
+        // Función para actualizar los resultados en los inputs
+        function actualizarResultados() {
+            // Actualizar resultados para clases s1 a s17
+            for (let i = 1; i <= 17; i++) {
+                document.getElementById(`resultadoS${i}`).value = calcularSumaPorClase(`s${i}`);
+            }
+
+            let totalS1S5 = calcularSumaPorClaseRango("s", 1, 5);
+            let totalS6S8 = calcularSumaPorClaseRango("s", 6, 8);
+            let totalS9S11 = calcularSumaPorClaseRango("s", 9, 11);
+            let totalS12S13 = calcularSumaPorClaseRango("s", 12, 13);
+            let totalS14S15 = calcularSumaPorClaseRango("s", 14, 15);
+            let totalS16S17 = calcularSumaPorClaseRango("s", 16, 17);
+
+            // Actualizar resultados para rangos específicos
+            document.getElementById("totalS1S5").value = totalS1S5;
+            document.getElementById("totalS6S8").value = totalS6S8;
+            document.getElementById("totalS9S11").value = totalS9S11;
+            document.getElementById("totalS12S13").value = totalS12S13;
+            document.getElementById("totalS14S15").value = totalS14S15;
+            document.getElementById("totalS16S17").value = totalS16S17;
+
+
+        }
+
+        // Función para calcular la suma de los elementos en un rango específico
+        function calcularSumaPorClaseRango(prefijo, desde, hasta) {
+            let suma = 0;
+            for (let i = desde; i <= hasta; i++) {
+                suma += calcularSumaPorClase(`${prefijo}${i}`);
+            }
+            return suma;
+        }
+
+        // Llama a la función al cargar la página
+        window.onload = actualizarResultados;
+
     </script>
 @endsection

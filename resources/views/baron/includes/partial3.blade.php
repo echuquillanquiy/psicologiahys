@@ -110,7 +110,7 @@
 
         <label for="98" class="col-sm-10 col-form-label">98.	Soy sensible a los sentimientos de las otras personas.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select s7" aria-label="Default select example" name="98" value="{{ old('98') }}" onchange="actualizarResultados()">
+            <select class="form-select s7 s8" aria-label="Default select example" name="98" value="{{ old('98') }}" onchange="actualizarResultados()">
                 <option value="">Elija</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -362,7 +362,7 @@
 
         <label for="119" class="col-sm-10 col-form-label">119.	Me es difícil ver sufrir a la gente.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select s7" aria-label="Default select example" name="119" value="{{ old('119') }}" onchange="actualizarResultados()">
+            <select class="form-select s7 s8" aria-label="Default select example" name="119" value="{{ old('119') }}" onchange="actualizarResultados()">
                 <option value="">Elija</option>
                 <option value="1">1</option>
                 <option value="2">2</option>

@@ -12,7 +12,9 @@ class BournoutController extends Controller
      */
     public function index()
     {
-        return view('bournout.index');
+        $bournouts = Bournout::orderBy('id', 'desc')->paginate(100);
+
+        return view('bournout.index', compact('bournouts'));
     }
 
     /**
@@ -58,9 +60,9 @@ class BournoutController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Bournout $bournout)
     {
-        //
+        return view('bournout.show', compact('bournout'));
     }
 
     /**

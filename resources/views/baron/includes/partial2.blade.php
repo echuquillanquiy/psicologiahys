@@ -123,7 +123,7 @@
 
         <label for="55" class="col-sm-10 col-form-label">55. Mis amigos me confían sus intimidades.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select s6" aria-label="Default select example" name="55" value="{{ old('55') }}" onchange="actualizarResultados()">
+            <select class="form-select s6 s8" aria-label="Default select example" name="55" value="{{ old('55') }}" onchange="actualizarResultados()">
                 <option value="">Elija</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -195,7 +195,7 @@
 
         <label for="61" class="col-sm-10 col-form-label">61. Me detendría y ayudaría a un niño que llora por encontrar a sus padres, aun cuando tuviese algo que hacer en ese momento.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select s7" aria-label="Default select example" name="61" value="{{ old('61') }}" onchange="actualizarResultados()">
+            <select class="form-select s7 s8" aria-label="Default select example" name="61" value="{{ old('61') }}" onchange="actualizarResultados()">
                 <option value="">Elija</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -327,7 +327,7 @@
 
         <label for="72" class="col-sm-10 col-form-label">72. Me importa lo que puede sucederle a los demás.</label>
         <div class="col-sm-2 mb-1">
-            <select class="form-select s7" aria-label="Default select example" name="72" value="{{ old('72') }}" onchange="actualizarResultados()">
+            <select class="form-select s7 s8" aria-label="Default select example" name="72" value="{{ old('72') }}" onchange="actualizarResultados()">
                 <option value="">Elija</option>
                 <option value="1">1</option>
                 <option value="2">2</option>

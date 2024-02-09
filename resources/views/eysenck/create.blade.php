@@ -190,7 +190,7 @@
                 } else if (coordenada1 > 16 && coordenada2 < 7) {
                     return 'ALTAMENTE - SANGUINEO';
                 } else {
-                    return 'HOLA SOY EDUARDO';
+                    return 'VOLVER A REALIZAR';
                 }
             }
         });

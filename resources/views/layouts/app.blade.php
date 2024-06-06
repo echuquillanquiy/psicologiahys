@@ -65,7 +65,22 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
+
+                                    <a class="dropdown-item" href="{{ route('bournout.index') }}">
+                                        Resultados Bournout
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('eysenck.index') }}">
+                                        Resultados Eysenck
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('baron.index') }}">
+                                        Resultados Baron
+                                    </a>
+
                                 </div>
+
+
                             </li>
                         @endguest
                     </ul>

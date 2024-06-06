@@ -21,6 +21,7 @@
                                 <th scope="col">MAXIMO PORCENTAJE</th>
                                 <th scope="col">PORCENTAJE</th>
                                 <th scope="col">DIAGNOSTICO</th>
+                                <th scope="col">Fecha</th>
                                 <th scope="col">Opciones</th>
                             </tr>
                             </thead>
@@ -36,6 +37,7 @@
                                     <td>100 %</td>
                                     <td>{{ $bournout->percent }} %</td>
                                     <td>{{ $bournout->category }}</td>
+                                    <td>{{ $bournout->created_at->format('Y-m-d') }}</td>
                                     <td>
                                         <a href="{{ url('bournout', $bournout) }}" class="btn btn-outline-info">Ver resultados</a>
                                     </td>

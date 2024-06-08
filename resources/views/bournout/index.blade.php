@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header text-center">
-                        <h3>{{ __('LISTADO DE RESULTADOS BARON') }} - {{ \Carbon\Carbon::now()->format('d-m-Y') }}</h3>
+                        <h3>{{ __('LISTADO DE RESULTADOS BOURNOUT') }} - {{ \Carbon\Carbon::now()->format('d-m-Y') }}</h3>
                     </div>
 
                     <div class="card-body">

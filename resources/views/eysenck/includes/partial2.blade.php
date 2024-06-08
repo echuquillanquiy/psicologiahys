@@ -1,4 +1,4 @@
-<div class="col-lg-4 col-md-4 col-sm-12">
+<div class="col-lg-12 col-md-12 col-sm-12">
     <div class="row">
         <label for="20" class="col-sm-10 col-form-label">20. Se siente incómodo (a) con vestidos que no son del diario?.</label>
         <div class="col-sm-2 mb-1">

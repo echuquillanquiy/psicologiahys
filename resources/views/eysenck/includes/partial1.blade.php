@@ -1,4 +1,4 @@
-<div class="col-lg-4 col-md-4 col-sm-12">
+<div class="col-lg-12 col-md-12 col-sm-12">
     <div class="row">
         <label for="1" class="col-sm-10 col-form-label">1. Le gusta abundancia de excitación y bullicio a su alrededor?.</label>
         <div class="col-sm-2 mb-1">

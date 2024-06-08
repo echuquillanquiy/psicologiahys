@@ -1,4 +1,4 @@
-<div class="col-lg-4 col-md-4 col-sm-12">
+<div class="col-lg-12 col-md-12 col-sm-12">
     <div class="row">
         <label for="39" class="col-sm-10 col-form-label">39. Es Ud. generalmente una persona tolerante, ¿que no se molesta si las cosas no están perfectas?.</label>
         <div class="col-sm-2 mb-1">

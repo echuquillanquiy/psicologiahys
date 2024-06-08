@@ -1,4 +1,4 @@
-<div class="col-lg-4 col-md-4 col-sm-12">
+<div class="col-lg-6 col-md-6 col-sm-12">
     <div class="row">
         <label for="45" class="col-sm-10 col-form-label">45. Lo primero que hago cuando tengo un problema es detenerme a pensar.</label>
         <div class="col-sm-2 mb-1">

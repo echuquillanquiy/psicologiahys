@@ -1,4 +1,4 @@
-<div class="col-lg-4 col-md-4 col-sm-12">
+<div class="col-lg-6 col-md-6 col-sm-12">
     <div class="row">
         <label for="1" class="col-sm-10 col-form-label">1. Para superar las dificultades que se me presentan actúo paso a paso.</label>
         <div class="col-sm-2 mb-1">

@@ -71,7 +71,7 @@
                             <div class="row">
                                     <label for="answer1" class="col-sm-10 col-form-label">1. Me siento emocionalmente agotado por mi trabajo.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer1" value="{{ old('answer1') }}">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer1" value="{{ old('answer1') }}" required>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -85,7 +85,7 @@
 
                                     <label for="answer2" class="col-sm-10 col-form-label">2. Me siento cansado al final de la jornada de trabajo.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer2">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer2" value="{{ old('answer2') }}" required>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -99,7 +99,7 @@
 
                                     <label for="answer3" class="col-sm-10 col-form-label">3. Me siento fatigado cuando me levanto por la mañana y tengo que enfrentarme con otro día de trabajo.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer3">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer3" value="{{ old('answer3') }}" required>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -113,7 +113,7 @@
 
                                     <label for="answer4" class="col-sm-10 col-form-label">4. Fácilmente comprendo cómo se sienten las personas.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer4">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer4" value="{{ old('answer4') }}" required>
                                             <option value="">Elija</option>
                                             <option value="6">0</option>
                                             <option value="5">1</option>
@@ -127,7 +127,7 @@
 
                                     <label for="answer5" class="col-sm-10 col-form-label">5. Creo que trato a algunas personas como si fueran objetos no personales.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer5">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer5" value="{{ old('answer5') }}" required>
                                             <option value="">Elija</option>
                                             <option value="6">0</option>
                                             <option value="5">1</option>
@@ -141,7 +141,7 @@
 
                                     <label for="answer6" class="col-sm-10 col-form-label">6. Trabajar todo el día con personas es un esfuerzo.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer6">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer6" value="{{ old('answer6') }}" required>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -155,7 +155,7 @@
 
                                     <label for="answer7" class="col-sm-10 col-form-label">7. Trato muy eficazmente los problemas de las personas.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer7">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer7" value="{{ old('answer7') }}" required>
                                             <option value="">Elija</option>
                                             <option value="6">0</option>
                                             <option value="5">1</option>
@@ -169,7 +169,7 @@
 
                                     <label for="answer8" class="col-sm-10 col-form-label">8. Me siento “quemado” por mi trabajo.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer8">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer8" value="{{ old('answer8') }}" required>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -183,7 +183,7 @@
 
                                     <label for="answer9" class="col-sm-10 col-form-label">9. Creo que estoy influyendo positivamente con mi trabajo en las vidas de los demás.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer9">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer9" value="{{ old('answer9') }}" required>
                                             <option value="">Elija</option>
                                             <option value="6">0</option>
                                             <option value="5">1</option>
@@ -197,7 +197,7 @@
 
                                     <label for="answer10" class="col-sm-10 col-form-label">10. Me he vuelto más insensible con la gente desde que ejerzo esta profesión.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer10">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer10" value="{{ old('answer10') }}" required>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -211,7 +211,7 @@
 
                                     <label for="answer11" class="col-sm-10 col-form-label">11. Me preocupa el hecho de que este trabajo me este endureciendo emocionalmente.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer11">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer11" value="{{ old('answer11') }}" required>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -225,7 +225,7 @@
 
                                     <label for="answer12" class="col-sm-10 col-form-label">12. Me siento muy activo.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer12">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer12" value="{{ old('answer12') }}" required>
                                             <option value="">Elija</option>
                                             <option value="6">0</option>
                                             <option value="5">1</option>
@@ -239,7 +239,7 @@
 
                                     <label for="answer13" class="col-sm-10 col-form-label">13. Me siento frustrado en mi trabajo.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer13">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer13" value="{{ old('answer13') }}" required>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -253,7 +253,7 @@
 
                                     <label for="answer14" class="col-sm-10 col-form-label">14. Creo que estoy trabajando demasiado.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer14">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer14" value="{{ old('answer14') }}" required>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -267,7 +267,7 @@
 
                                     <label for="answer15" class="col-sm-10 col-form-label">15. No me  preocupa realmente lo que le ocurre realmente a algunas personas a las que doy servicio.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer15">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer15" value="{{ old('answer15') }}" required>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -281,7 +281,7 @@
 
                                     <label for="answer16" class="col-sm-10 col-form-label">16. Trabajar directamente con personas me produce estrés</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer16">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer16" value="{{ old('answer16') }}" requiredu>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -295,7 +295,7 @@
 
                                     <label for="answer17" class="col-sm-10 col-form-label">17. Fácilmente puedo crear una atmósfera relajada con las personas a las que doy servicio.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer17">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer17" value="{{ old('answer17') }}" required>
                                             <option value="">Elija</option>
                                             <option value="6">0</option>
                                             <option value="5">1</option>
@@ -309,7 +309,7 @@
 
                                     <label for="answer18" class="col-sm-10 col-form-label">18. Me siento estimulado después de trabajar en contacto con personas.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer18">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer18" value="{{ old('answer18') }}" required>
                                             <option value="">Elija</option>
                                             <option value="6">0</option>
                                             <option value="5">1</option>
@@ -323,7 +323,7 @@
 
                                     <label for="answer19" class="col-sm-10 col-form-label">19. He conseguido muchas cosas útiles en mi profesión.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer19">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer19" value="{{ old('answer19') }}" required>
                                             <option value="">Elija</option>
                                             <option value="6">0</option>
                                             <option value="5">1</option>
@@ -337,7 +337,7 @@
 
                                     <label for="answer20" class="col-sm-10 col-form-label">20. Me siento acabado.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer20">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer20" value="{{ old('answer20') }}" required>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -351,7 +351,7 @@
 
                                     <label for="answer21" class="col-sm-10 col-form-label">21. En mi trabajo trato los problemas emocionales con mucha calma.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer21">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer21" value="{{ old('answer21') }}" required>
                                             <option value="">Elija</option>
                                             <option value="6">0</option>
                                             <option value="5">1</option>
@@ -365,7 +365,7 @@
 
                                     <label for="answer22" class="col-sm-10 col-form-label">22. Creo que las personas que trato me culpan de algunos de sus problemas.</label>
                                     <div class="col-sm-2 mb-1">
-                                        <select class="form-select respuesta" aria-label="Default select example" name="answer22">
+                                        <select class="form-select respuesta" aria-label="Default select example" name="answer22" value="{{ old('answer22') }}" required>
                                             <option value="">Elija</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>

@@ -171,23 +171,23 @@
             });
 
             // Función para obtener el diagnóstico
-            function obtenerDiagnostico(coordenada1, coordenada2, coordenada3) {
+            function obtenerDiagnostico(coordenadae, coordenadan, coordenada3) {
                 // Lógica de condición basada en los valores de las coordenadas (ajústala según tus necesidades)
-                if (coordenada1 > 10 && coordenada1 < 14 && coordenada2 > 11 && coordenada2 < 16) {
+                if (coordenadae >= 10 && coordenadae < 14 && coordenadan > 11 && coordenadan < 16) {
                     return 'TENDIENTE - MELANCOLICO';
-                } else if (coordenada1 < 11 && coordenada2 > 15) {
+                } else if (coordenadae < 10 && coordenadan > 16) {
                     return 'ALTAMENTE - MELANCOLICO';
-                } else if (coordenada1 > 10 && coordenada1 < 14 && coordenada2 > 6 && coordenada2 < 12) {
+                } else if (coordenadae >= 10 && coordenadae < 14 && coordenadan > 6 && coordenadan < 12) {
                     return 'TENDIENTE - FLEMATICO';
-                } else if (coordenada1 < 11 && coordenada2 < 7) {
+                } else if (coordenadae < 11 && coordenadan < 7) {
                     return 'ALTAMENTE - FLEMATICO';
-                } else if (coordenada1 > 13 && coordenada1 < 17 && coordenada2 > 11 && coordenada2 < 16) {
+                } else if (coordenadae > 13 && coordenadae < 17 && coordenadan > 11 && coordenadan < 16) {
                     return 'TENDIENTE - COLERICO';
-                } else if (coordenada1 > 16 && coordenada2 > 15) {
-                        return 'ALTAMENTE - COLERICO';
-                } else if (coordenada1 > 13 && coordenada1 < 17 && coordenada2 > 6 && coordenada2 < 12) {
+                } else if (coordenadae > 16 && coordenadan > 16) {
+                    return 'ALTAMENTE - COLERICO';
+                } else if (coordenadae > 13 && coordenadae < 17 && coordenadan > 6 && coordenadan < 12) {
                     return 'TENDIENTE - SANGUINEO';
-                } else if (coordenada1 > 16 && coordenada2 < 7) {
+                } else if (coordenadae > 16 && coordenadan < 7) {
                     return 'ALTAMENTE - SANGUINEO';
                 } else {
                     return 'VOLVER A REALIZAR';

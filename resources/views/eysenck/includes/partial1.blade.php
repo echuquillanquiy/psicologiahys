@@ -9,7 +9,7 @@
             </select>
         </div>
 
-        <label for="2" class="col-sm-10 col-form-label">2. Le gusta abundancia de excitación y bullicio a su alrededor?.</label>
+        <label for="2" class="col-sm-10 col-form-label">2. ¿Tiene a menudo un sentimiento de intranquilidad, como si quisiera algo, pero sin saber qué? .</label>
         <div class="col-sm-2 mb-1">
             <select class="form-select n" aria-label="Default select example" name="2" value="{{ old('2') }}">
                 <option value="">Elija</option>
@@ -45,7 +45,7 @@
             </select>
         </div>
 
-        <label for="6" class="col-sm-10 col-form-label">6. Le gusta abundancia de excitación y bullicio a su alrededor?.</label>
+        <label for="6" class="col-sm-10 col-form-label">6. ¿Cuándo niño (a), hacía siempre inmediatamente lo que le decían sin refunfuñar? .</label>
         <div class="col-sm-2 mb-1">
             <select class="form-select l" aria-label="Default select example" name="6" value="{{ old('6') }}">
                 <option value="">Elija</option>

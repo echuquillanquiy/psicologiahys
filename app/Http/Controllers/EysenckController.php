@@ -12,7 +12,9 @@ class EysenckController extends Controller
      */
     public function index()
     {
-        $eysencks = Eysenck::orderBy('id', 'desc')->paginate(100);
+        $eysencks = Eysenck::orderBy('id', 'desc')
+            ->whereDate('created_at', now()->toDateString())
+            ->paginate(100);
 
         return view('eysenck.index', compact('eysencks'));
     }

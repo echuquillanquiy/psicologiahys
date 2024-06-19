@@ -12,7 +12,9 @@ class BournoutController extends Controller
      */
     public function index()
     {
-        $bournouts = Bournout::orderBy('id', 'desc')->paginate(100);
+        $bournouts = Bournout::orderBy('id', 'desc')
+            ->whereDate('created_at', now()->toDateString())
+            ->paginate(100);
 
         return view('bournout.index', compact('bournouts'));
     }

@@ -17,6 +17,7 @@
                                     <th scope="col">NOMBRES Y APELLIDOS</th>
                                     <th scope="col">EDAD</th>
                                     <th scope="col">OCUPACION</th>
+                                    <th scope="col">FECHA</th>
                                     <th scope="col">Opciones</th>
                                 </tr>
                             </thead>
@@ -28,6 +29,7 @@
                                         <td>{{ $baron->name }}</td>
                                         <td>{{ $baron->age }}</td>
                                         <td>{{ $baron->ocupation }}</td>
+                                        <td>{{ $baron->created_at->format('d-m-Y') }}</td>
                                         <td>
                                             <a href="{{ url('baron', $baron) }}" class="btn btn-outline-info">Ver resultados</a>
                                         </td>

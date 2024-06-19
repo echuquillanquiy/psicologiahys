@@ -12,7 +12,9 @@ class BaronController extends Controller
      */
     public function index()
     {
-        $barons = Baron::orderBy('id', 'desc')->paginate(100);
+        $barons = Baron::orderBy('id', 'desc')
+            ->whereDate('created_at', now()->toDateString())
+            ->paginate(100);
 
         return view('baron.index', compact('barons'));
     }

@@ -78,6 +78,8 @@
 
                                                 @include('baron.includes.partial3')
 
+                                                @include('baron.includes.cuadrosbase')
+
                                                 <button type="submit" class="btn btn-primary btn-lg">ENVIAR RESPUESTAS</button>
 
                                             </div>

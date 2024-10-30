@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('audits', function (Blueprint $table) {
+        Schema::create('epworths', function (Blueprint $table) {
             $table->id();
 
             $table->string('name')->nullable();
@@ -25,8 +25,6 @@ return new class extends Migration
             $table->string('p6')->nullable();
             $table->string('p7')->nullable();
             $table->string('p8')->nullable();
-            $table->string('p9')->nullable();
-            $table->string('p10')->nullable();
 
             $table->string('score')->nullable();
             $table->string('dx')->nullable();
@@ -40,6 +38,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('audits');
+        Schema::dropIfExists('epworths');
     }
 };

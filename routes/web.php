@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\AcrofobyController;
+use App\Http\Controllers\AuditController;
 use App\Http\Controllers\BaronController;
 use App\Http\Controllers\BournoutController;
 use App\Http\Controllers\ClaustrofobyController;
+use App\Http\Controllers\EpworthController;
 use App\Http\Controllers\EysenckController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -35,3 +38,8 @@ Route::resource('baron', BaronController::class)->names('baron')->middleware('au
 
 Route::resource('clq', ClaustrofobyController::class)->names('clq')->middleware('auth');
 
+Route::resource('audit', AuditController::class)->names('audit')->middleware('auth');
+
+Route::resource('cohen', AcrofobyController::class)->names('cohen')->middleware('auth');
+
+Route::resource('epworth', EpworthController::class)->names('epworth')->middleware('auth');

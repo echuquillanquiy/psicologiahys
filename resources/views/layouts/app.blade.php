@@ -82,6 +82,18 @@
                                         Resultados Clq
                                     </a>
 
+                                    <a class="dropdown-item" href="{{ route('audit.index') }}">
+                                        Resultados Audit
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('cohen.index') }}">
+                                        Resultados Cohen
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('epworth.index') }}">
+                                        Resultados Epworth
+                                    </a>
+
                                 </div>
 
 

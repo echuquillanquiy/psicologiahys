@@ -2,21 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Audit;
+use App\Models\Epworth;
 use Illuminate\Http\Request;
 
-class AuditController extends Controller
+class EpworthController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $audits = Audit::orderBy('id', 'desc')
+        $epworths = Epworth::orderBy('id', 'desc')
             ->whereDate('created_at', now()->toDateString())
             ->paginate(100);
 
-        return view('audit.index', compact('audits'));
+        return view('epworth.index', compact('epworths'));
     }
 
     /**
@@ -24,10 +24,10 @@ class AuditController extends Controller
      */
     public function create()
     {
-        return view('audit.create');
+        return view('epworth.create');
     }
 
-    public function ValidacionAudit(Request $request)
+    public function ValidacionEpworth(Request $request)
     {
         $rules = [
             'name' => 'required|min:10',
@@ -43,34 +43,28 @@ class AuditController extends Controller
 
         $this->validate($request, $rules, $messages);
     }
+
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        $this->ValidacionAudit($request);
+        $this->ValidacionEpworth($request);
 
-        $audit = Audit::create(request()->all());
+        $epworth = Epworth::create(request()->all());
 
-        $sumaaudit = $audit->p1 + $audit->p2 + $audit->p3 + $audit->p4 + $audit->p5 + $audit->p6 + $audit->p7 + $audit->p8 + $audit->p9 + $audit->p10;
+        $sumaepworth = $epworth->p1 + $epworth->p2 + $epworth->p3 + $epworth->p4 + $epworth->p5 + $epworth->p6 + $epworth->p7 + $epworth->p8;
 
-        if ($sumaaudit >=0 && $sumaaudit <=8)
+        if ($sumaepworth > 15)
         {
-            $dxaudit = "SIN RIESGO";
-        }
-        elseif ($sumaaudit >= 9 && $sumaaudit <= 15)
-        {
-            $dxaudit = "RIESGO";
-        }elseif ($sumaaudit >= 16 && $sumaaudit <= 19)
-        {
-            $dxaudit = "PERJUDICIAL";
+            $dxepworth = "NO APTO";
         } else {
-            $dxaudit = "ALTO CONSUMO";
+            $dxepworth = "APTO";
         }
 
-        $audit->update([
-            'score' => $sumaaudit,
-            'dx' => $dxaudit
+        $epworth->update([
+            'score' => $sumaepworth,
+            'dx' => $dxepworth
         ]);
 
         return redirect('home');

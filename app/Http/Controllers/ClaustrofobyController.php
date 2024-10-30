@@ -65,11 +65,9 @@ class ClaustrofobyController extends Controller
             $dxclq = "ALTA PRESENCIA";
         }
 
-
         $clq->update([
             'score' => $sumaclq,
             'dx' => $dxclq
-
         ]);
 
         return redirect('home');

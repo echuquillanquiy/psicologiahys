@@ -2,21 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Audit;
+use App\Models\Acrofoby;
 use Illuminate\Http\Request;
 
-class AuditController extends Controller
+class AcrofobyController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $audits = Audit::orderBy('id', 'desc')
+        $cohens = Acrofoby::orderBy('id', 'desc')
             ->whereDate('created_at', now()->toDateString())
             ->paginate(100);
 
-        return view('audit.index', compact('audits'));
+        return view('cohen.index', compact('cohens'));
     }
 
     /**
@@ -24,10 +24,10 @@ class AuditController extends Controller
      */
     public function create()
     {
-        return view('audit.create');
+        return view('cohen.create');
     }
 
-    public function ValidacionAudit(Request $request)
+    public function ValidacionCohen(Request $request)
     {
         $rules = [
             'name' => 'required|min:10',
@@ -43,34 +43,38 @@ class AuditController extends Controller
 
         $this->validate($request, $rules, $messages);
     }
+
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        $this->ValidacionAudit($request);
+        $this->ValidacionCohen($request);
+        $cohen = Acrofoby::create(request()->all());
 
-        $audit = Audit::create(request()->all());
+        $sumacohen = $cohen->p1 + $cohen->p2 + $cohen->p3 + $cohen->p4 + $cohen->p5 + $cohen->p6 + $cohen->p7 + $cohen->p8 + $cohen->p9 + $cohen->p10 +
+            $cohen->p11 + $cohen->p12 + $cohen->p13 + $cohen->p14 + $cohen->p15 + $cohen->p16 + $cohen->p17 + $cohen->p18 + $cohen->p19 + $cohen->p20;
 
-        $sumaaudit = $audit->p1 + $audit->p2 + $audit->p3 + $audit->p4 + $audit->p5 + $audit->p6 + $audit->p7 + $audit->p8 + $audit->p9 + $audit->p10;
-
-        if ($sumaaudit >=0 && $sumaaudit <=8)
+        if ($sumacohen >=0 && $sumacohen <=30)
         {
-            $dxaudit = "SIN RIESGO";
+            $dxcohen = "ASUSENTE";
         }
-        elseif ($sumaaudit >= 9 && $sumaaudit <= 15)
+        elseif ($sumacohen >= 31 && $sumacohen <= 50)
         {
-            $dxaudit = "RIESGO";
-        }elseif ($sumaaudit >= 16 && $sumaaudit <= 19)
+            $dxcohen = "DISCRETO";
+        }elseif ($sumacohen >= 51 && $sumacohen <= 70)
         {
-            $dxaudit = "PERJUDICIAL";
+            $dxcohen = "MODERADO";
+        }elseif ($sumacohen >= 71 && $sumacohen <= 90)
+        {
+            $dxcohen = "SEVERO";
         } else {
-            $dxaudit = "ALTO CONSUMO";
+            $dxcohen = "ALTO";
         }
 
-        $audit->update([
-            'score' => $sumaaudit,
-            'dx' => $dxaudit
+        $cohen->update([
+            'score' => $sumacohen,
+            'dx' => $dxcohen
         ]);
 
         return redirect('home');

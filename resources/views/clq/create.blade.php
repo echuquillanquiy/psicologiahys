@@ -4,6 +4,8 @@
 
     <form class="container-fluid" action="{{ route('clq.store') }}" method="POST">
         @csrf
+
+
         <div class="row justify-content-center mb-1">
             <div class="col-md-8">
                 <div class="card">
@@ -48,15 +50,13 @@
 
 
         <div class="row justify-content-center">
-            <div class="col-md-12">
+            <div class="col-md-8">
                 <div class="card">
 
                     <div class="card-body">
 
                         <div class="row">
-                            <div class="form-check form-check-inline col-lg-12 col-md-12 col-sm-12">
-
-                                <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="row">
 
                                         <table class="table table-bordered table-info text-center">
@@ -82,100 +82,107 @@
 
                                     </div>
                                 </div>
+                        </div>
 
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <div class="row">
-                                        <label for="p1" class="col-sm-10 col-form-label">1. Estar encerrado en una habitacion pequeña y sin ventanas durante 15 minutos.</label>
-                                        <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p1">
-                                                @for($i = 0; $i <= 10; $i++ )
-                                                    <option value="{{ $i }}" {{ old('p1') == $i ? 'selected' : '' }}>
-                                                        {{ $i }}
-                                                    </option>
-                                                @endfor
-                                            </select>
-                                        </div>
+                        <div class="row">
 
-                                        <label for="p2" class="col-sm-10 col-form-label">2. Sentir que la ropa me oprime y no puedo quitármela.</label>
-                                        <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p2">
-                                                @for($i = 0; $i <= 10; $i++ )
-                                                    <option value="{{ $i }}" {{ old('p2') == $i ? 'selected' : '' }}>
-                                                        {{ $i }}
-                                                    </option>
-                                                @endfor
-                                            </select>
-                                        </div>
-
-                                        <label for="p3" class="col-sm-10 col-form-label">3. Estar tumbado en un saco de dormir estrecho, con los brazos y piernas dentro, abrochado hasta el cuello, sin spoder salir durante 15 minutos.</label>
-                                        <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p3">
-                                                @for($i = 0; $i <= 10; $i++ )
-                                                    <option value="{{ $i }}" {{ old('p3') == $i ? 'selected' : '' }}>
-                                                        {{ $i }}
-                                                    </option>
-                                                @endfor
-                                            </select>
-                                        </div>
-
-                                        <label for="p4" class="col-sm-10 col-form-label">4. Estar en la parte trasera de un auto de sólo tres puertas.</label>
-                                        <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p4">
-                                                @for($i = 0; $i <= 10; $i++ )
-                                                    <option value="{{ $i }}" {{ old('p4') == $i ? 'selected' : '' }}>
-                                                        {{ $i }}
-                                                    </option>
-                                                @endfor
-                                            </select>
-                                        </div>
-
-                                        <label for="p5" class="col-sm-10 col-form-label">5. Estar en un baño público y se atasca la cerradura.</label>
-                                        <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p5">
-                                                @for($i = 0; $i <= 10; $i++ )
-                                                    <option value="{{ $i }}" {{ old('p5') == $i ? 'selected' : '' }}>
-                                                        {{ $i }}
-                                                    </option>
-                                                @endfor
-                                            </select>
-                                        </div>
-
-                                        <label for="p6" class="col-sm-10 col-form-label">6. Estar en un tren lleno de gente que para en cada estación.</label>
-                                        <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p6">
-                                                @for($i = 0; $i <= 10; $i++ )
-                                                    <option value="{{ $i }}" {{ old('p6') == $i ? 'selected' : '' }}>
-                                                        {{ $i }}
-                                                    </option>
-                                                @endfor
-                                            </select>
-                                        </div>
-
-                                        <label for="p7" class="col-sm-10 col-form-label">7. Estar en un ascensor en el piso más bajo con la puerta cerrada.</label>
-                                        <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p7">
-                                                @for($i = 0; $i <= 10; $i++ )
-                                                    <option value="{{ $i }}" {{ old('p7') == $i ? 'selected' : '' }}>
-                                                        {{ $i }}
-                                                    </option>
-                                                @endfor
-                                            </select>
-                                        </div>
-
-                                        <label for="p8" class="col-sm-10 col-form-label">8. Darse una ducha o un baño con la mampara completamente cerrada.</label>
-                                        <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p8">
-                                                @for($i = 0; $i <= 10; $i++ )
-                                                    <option value="{{ $i }}" {{ old('p8') == $i ? 'selected' : '' }}>
-                                                        {{ $i }}
-                                                    </option>
-                                                @endfor
-                                            </select>
-                                        </div>
-
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="row">
+                                    <label for="p1" class="col-sm-10 col-form-label">1. Estar encerrado en una habitacion pequeña y sin ventanas durante 15 minutos.</label>
+                                    <div class="col-sm-2 mb-1">
+                                        <select class="form-select" aria-label="Default select example" name="p1">
+                                            @for($i = 0; $i <= 10; $i++ )
+                                                <option value="{{ $i }}" {{ old('p1') == $i ? 'selected' : '' }}>
+                                                    {{ $i }}
+                                                </option>
+                                            @endfor
+                                        </select>
                                     </div>
+
+                                    <label for="p2" class="col-sm-10 col-form-label">2. Sentir que la ropa me oprime y no puedo quitármela.</label>
+                                    <div class="col-sm-2 mb-1">
+                                        <select class="form-select" aria-label="Default select example" name="p2">
+                                            @for($i = 0; $i <= 10; $i++ )
+                                                <option value="{{ $i }}" {{ old('p2') == $i ? 'selected' : '' }}>
+                                                    {{ $i }}
+                                                </option>
+                                            @endfor
+                                        </select>
+                                    </div>
+
+                                    <label for="p3" class="col-sm-10 col-form-label">3. Estar tumbado en un saco de dormir estrecho, con los brazos y piernas dentro, abrochado hasta el cuello, sin spoder salir durante 15 minutos.</label>
+                                    <div class="col-sm-2 mb-1">
+                                        <select class="form-select" aria-label="Default select example" name="p3">
+                                            @for($i = 0; $i <= 10; $i++ )
+                                                <option value="{{ $i }}" {{ old('p3') == $i ? 'selected' : '' }}>
+                                                    {{ $i }}
+                                                </option>
+                                            @endfor
+                                        </select>
+                                    </div>
+
+                                    <label for="p4" class="col-sm-10 col-form-label">4. Estar en la parte trasera de un auto de sólo tres puertas.</label>
+                                    <div class="col-sm-2 mb-1">
+                                        <select class="form-select" aria-label="Default select example" name="p4">
+                                            @for($i = 0; $i <= 10; $i++ )
+                                                <option value="{{ $i }}" {{ old('p4') == $i ? 'selected' : '' }}>
+                                                    {{ $i }}
+                                                </option>
+                                            @endfor
+                                        </select>
+                                    </div>
+
+                                    <label for="p5" class="col-sm-10 col-form-label">5. Estar en un baño público y se atasca la cerradura.</label>
+                                    <div class="col-sm-2 mb-1">
+                                        <select class="form-select" aria-label="Default select example" name="p5">
+                                            @for($i = 0; $i <= 10; $i++ )
+                                                <option value="{{ $i }}" {{ old('p5') == $i ? 'selected' : '' }}>
+                                                    {{ $i }}
+                                                </option>
+                                            @endfor
+                                        </select>
+                                    </div>
+
+                                    <label for="p6" class="col-sm-10 col-form-label">6. Estar en un tren lleno de gente que para en cada estación.</label>
+                                    <div class="col-sm-2 mb-1">
+                                        <select class="form-select" aria-label="Default select example" name="p6">
+                                            @for($i = 0; $i <= 10; $i++ )
+                                                <option value="{{ $i }}" {{ old('p6') == $i ? 'selected' : '' }}>
+                                                    {{ $i }}
+                                                </option>
+                                            @endfor
+                                        </select>
+                                    </div>
+
+                                    <label for="p7" class="col-sm-10 col-form-label">7. Estar en un ascensor en el piso más bajo con la puerta cerrada.</label>
+                                    <div class="col-sm-2 mb-1">
+                                        <select class="form-select" aria-label="Default select example" name="p7">
+                                            @for($i = 0; $i <= 10; $i++ )
+                                                <option value="{{ $i }}" {{ old('p7') == $i ? 'selected' : '' }}>
+                                                    {{ $i }}
+                                                </option>
+                                            @endfor
+                                        </select>
+                                    </div>
+
+                                    <label for="p8" class="col-sm-10 col-form-label">8. Darse una ducha o un baño con la mampara completamente cerrada.</label>
+                                    <div class="col-sm-2 mb-1">
+                                        <select class="form-select" aria-label="Default select example" name="p8">
+                                            @for($i = 0; $i <= 10; $i++ )
+                                                <option value="{{ $i }}" {{ old('p8') == $i ? 'selected' : '' }}>
+                                                    {{ $i }}
+                                                </option>
+                                            @endfor
+                                        </select>
+                                    </div>
+
                                 </div>
                             </div>
+                        </div>
+
+                    </div>
+
+
 
 
                             <button type="submit" class="btn btn-primary btn-lg">ENVIAR RESPUESTAS</button>

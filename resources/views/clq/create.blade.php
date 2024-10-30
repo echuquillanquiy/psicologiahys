@@ -23,10 +23,7 @@
                             <div class="col-12 col-lg-4 col-sm-12 col-md-12">
                                 <div class="mb-0">
                                     <label for="company" class="form-label">Empresa</label>
-                                    <input type="text" name="company" class="form-control @error('company') border border-danger @enderror" value="{{ old('company') }}">
-                                    @error('company')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
+                                    <input type="text" name="company" class="form-control" value="{{ old('company') }}">
                                 </div>
                             </div>
 
@@ -90,137 +87,89 @@
                                     <div class="row">
                                         <label for="p1" class="col-sm-10 col-form-label">1. Estar encerrado en una habitacion pequeña y sin ventanas durante 15 minutos.</label>
                                         <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p1" value="{{ old('p1') }}">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
+                                            <select class="form-select" aria-label="Default select example" name="p1">
+                                                @for($i = 0; $i <= 10; $i++ )
+                                                    <option value="{{ $i }}" {{ old('p1') == $i ? 'selected' : '' }}>
+                                                        {{ $i }}
+                                                    </option>
+                                                @endfor
                                             </select>
                                         </div>
 
                                         <label for="p2" class="col-sm-10 col-form-label">2. Sentir que la ropa me oprime y no puedo quitármela.</label>
                                         <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p2" value="{{ old('p2') }}">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
+                                            <select class="form-select" aria-label="Default select example" name="p2">
+                                                @for($i = 0; $i <= 10; $i++ )
+                                                    <option value="{{ $i }}" {{ old('p2') == $i ? 'selected' : '' }}>
+                                                        {{ $i }}
+                                                    </option>
+                                                @endfor
                                             </select>
                                         </div>
 
                                         <label for="p3" class="col-sm-10 col-form-label">3. Estar tumbado en un saco de dormir estrecho, con los brazos y piernas dentro, abrochado hasta el cuello, sin spoder salir durante 15 minutos.</label>
                                         <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p3" value="{{ old('p3') }}">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
+                                            <select class="form-select" aria-label="Default select example" name="p3">
+                                                @for($i = 0; $i <= 10; $i++ )
+                                                    <option value="{{ $i }}" {{ old('p3') == $i ? 'selected' : '' }}>
+                                                        {{ $i }}
+                                                    </option>
+                                                @endfor
                                             </select>
                                         </div>
 
                                         <label for="p4" class="col-sm-10 col-form-label">4. Estar en la parte trasera de un auto de sólo tres puertas.</label>
                                         <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p4" value="{{ old('p4') }}">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
+                                            <select class="form-select" aria-label="Default select example" name="p4">
+                                                @for($i = 0; $i <= 10; $i++ )
+                                                    <option value="{{ $i }}" {{ old('p4') == $i ? 'selected' : '' }}>
+                                                        {{ $i }}
+                                                    </option>
+                                                @endfor
                                             </select>
                                         </div>
 
                                         <label for="p5" class="col-sm-10 col-form-label">5. Estar en un baño público y se atasca la cerradura.</label>
                                         <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p5" value="{{ old('p5') }}">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
+                                            <select class="form-select" aria-label="Default select example" name="p5">
+                                                @for($i = 0; $i <= 10; $i++ )
+                                                    <option value="{{ $i }}" {{ old('p5') == $i ? 'selected' : '' }}>
+                                                        {{ $i }}
+                                                    </option>
+                                                @endfor
                                             </select>
                                         </div>
 
                                         <label for="p6" class="col-sm-10 col-form-label">6. Estar en un tren lleno de gente que para en cada estación.</label>
                                         <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p6" value="{{ old('p6') }}">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
+                                            <select class="form-select" aria-label="Default select example" name="p6">
+                                                @for($i = 0; $i <= 10; $i++ )
+                                                    <option value="{{ $i }}" {{ old('p6') == $i ? 'selected' : '' }}>
+                                                        {{ $i }}
+                                                    </option>
+                                                @endfor
                                             </select>
                                         </div>
 
                                         <label for="p7" class="col-sm-10 col-form-label">7. Estar en un ascensor en el piso más bajo con la puerta cerrada.</label>
                                         <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p7" value="{{ old('p7') }}">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
+                                            <select class="form-select" aria-label="Default select example" name="p7">
+                                                @for($i = 0; $i <= 10; $i++ )
+                                                    <option value="{{ $i }}" {{ old('p7') == $i ? 'selected' : '' }}>
+                                                        {{ $i }}
+                                                    </option>
+                                                @endfor
                                             </select>
                                         </div>
 
                                         <label for="p8" class="col-sm-10 col-form-label">8. Darse una ducha o un baño con la mampara completamente cerrada.</label>
                                         <div class="col-sm-2 mb-1">
-                                            <select class="form-select" aria-label="Default select example" name="p8" value="{{ old('p8') }}">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
+                                            <select class="form-select" aria-label="Default select example" name="p8">
+                                                @for($i = 0; $i <= 10; $i++ )
+                                                    <option value="{{ $i }}" {{ old('p8') == $i ? 'selected' : '' }}>
+                                                        {{ $i }}
+                                                    </option>
+                                                @endfor
                                             </select>
                                         </div>
 

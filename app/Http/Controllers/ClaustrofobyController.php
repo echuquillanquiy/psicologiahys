@@ -32,15 +32,12 @@ class ClaustrofobyController extends Controller
     {
         $rules = [
             'name' => 'required|min:10',
-            'company' => 'required|min:5',
             'ocupation' => 'required|min:5'
         ];
 
         $messages = [
             'name.required' => 'Sus Nombres y Apellidos son obligatorios.',
             'name.min' => ' Ingrese sus nombres y apellidos completos.',
-            'company.required' => 'Escriba la empresa.',
-            'company.min' => 'Ingrese una empresa válida.',
             'ocupation.required' => 'Coloca tu profesión.',
             'ocupation.min' => 'Ingrese una profesión válida.',
         ];

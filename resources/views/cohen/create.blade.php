@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header text-center">
-                        <h3>{{ __('CUESTIONARIO DE CLAUSTROFOBIA CLQ') }} - {{ \Carbon\Carbon::now()->format('d-m-Y') }}</h3>
+                        <h3>{{ __('CUESTIONARIO DE ACROFOBIA (COHEN)') }} - {{ \Carbon\Carbon::now()->format('d-m-Y') }}</h3>
                         <div class="row">
                             <div class="col-12 col-lg-6 col-sm-12 col-md-12">
                                 <div class="mb-0">

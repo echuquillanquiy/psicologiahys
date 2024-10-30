@@ -78,6 +78,10 @@
                                         Resultados Baron
                                     </a>
 
+                                    <a class="dropdown-item" href="{{ route('clq.index') }}">
+                                        Resultados Clq
+                                    </a>
+
                                 </div>
 
 

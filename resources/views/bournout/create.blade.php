@@ -73,13 +73,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer1" value="{{ old('answer1') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer1') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer1') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer1') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer1') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer1') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer1') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer1') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -87,13 +87,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer2" value="{{ old('answer2') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer2') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer2') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer2') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer2') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer2') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer2') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer2') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -101,13 +101,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer3" value="{{ old('answer3') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer3') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer3') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer3') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer3') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer3') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer3') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer3') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -115,13 +115,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer4" value="{{ old('answer4') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="6">0</option>
-                                            <option value="5">1</option>
-                                            <option value="4">2</option>
-                                            <option value="3">3</option>
-                                            <option value="2">4</option>
-                                            <option value="1">5</option>
-                                            <option value="0">6</option>
+                                            <option value="6" {{ old('answer4') == '6' ? 'selected' : '' }}>0</option>
+                                            <option value="5" {{ old('answer4') == '5' ? 'selected' : '' }}>1</option>
+                                            <option value="4" {{ old('answer4') == '4' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer4') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="2" {{ old('answer4') == '2' ? 'selected' : '' }}>4</option>
+                                            <option value="1" {{ old('answer4') == '1' ? 'selected' : '' }}>5</option>
+                                            <option value="0" {{ old('answer4') == '0' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -129,13 +129,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer5" value="{{ old('answer5') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="6">0</option>
-                                            <option value="5">1</option>
-                                            <option value="4">2</option>
-                                            <option value="3">3</option>
-                                            <option value="2">4</option>
-                                            <option value="1">5</option>
-                                            <option value="0">6</option>
+                                            <option value="6" {{ old('answer5') == '6' ? 'selected' : '' }}>0</option>
+                                            <option value="5" {{ old('answer5') == '5' ? 'selected' : '' }}>1</option>
+                                            <option value="4" {{ old('answer5') == '4' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer5') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="2" {{ old('answer5') == '2' ? 'selected' : '' }}>4</option>
+                                            <option value="1" {{ old('answer5') == '1' ? 'selected' : '' }}>5</option>
+                                            <option value="0" {{ old('answer5') == '0' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -143,13 +143,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer6" value="{{ old('answer6') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer6') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer6') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer6') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer6') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer6') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer6') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer6') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -157,13 +157,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer7" value="{{ old('answer7') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="6">0</option>
-                                            <option value="5">1</option>
-                                            <option value="4">2</option>
-                                            <option value="3">3</option>
-                                            <option value="2">4</option>
-                                            <option value="1">5</option>
-                                            <option value="0">6</option>
+                                            <option value="6" {{ old('answer7') == '6' ? 'selected' : '' }}>0</option>
+                                            <option value="5" {{ old('answer7') == '5' ? 'selected' : '' }}>1</option>
+                                            <option value="4" {{ old('answer7') == '4' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer7') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="2" {{ old('answer7') == '2' ? 'selected' : '' }}>4</option>
+                                            <option value="1" {{ old('answer7') == '1' ? 'selected' : '' }}>5</option>
+                                            <option value="0" {{ old('answer7') == '0' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -171,13 +171,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer8" value="{{ old('answer8') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer8') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer8') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer8') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer8') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer8') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer8') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer8') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -185,13 +185,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer9" value="{{ old('answer9') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="6">0</option>
-                                            <option value="5">1</option>
-                                            <option value="4">2</option>
-                                            <option value="3">3</option>
-                                            <option value="2">4</option>
-                                            <option value="1">5</option>
-                                            <option value="0">6</option>
+                                            <option value="6" {{ old('answer9') == '6' ? 'selected' : '' }}>0</option>
+                                            <option value="5" {{ old('answer9') == '5' ? 'selected' : '' }}>1</option>
+                                            <option value="4" {{ old('answer9') == '4' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer9') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="2" {{ old('answer9') == '2' ? 'selected' : '' }}>4</option>
+                                            <option value="1" {{ old('answer9') == '1' ? 'selected' : '' }}>5</option>
+                                            <option value="0" {{ old('answer9') == '0' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -199,13 +199,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer10" value="{{ old('answer10') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer10') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer10') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer10') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer10') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer10') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer10') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer10') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -213,13 +213,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer11" value="{{ old('answer11') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer11') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer11') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer11') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer11') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer11') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer11') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer11') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -227,13 +227,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer12" value="{{ old('answer12') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="6">0</option>
-                                            <option value="5">1</option>
-                                            <option value="4">2</option>
-                                            <option value="3">3</option>
-                                            <option value="2">4</option>
-                                            <option value="1">5</option>
-                                            <option value="0">6</option>
+                                            <option value="6" {{ old('answer12') == '6' ? 'selected' : '' }}>0</option>
+                                            <option value="5" {{ old('answer12') == '5' ? 'selected' : '' }}>1</option>
+                                            <option value="4" {{ old('answer12') == '4' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer12') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="2" {{ old('answer12') == '2' ? 'selected' : '' }}>4</option>
+                                            <option value="1" {{ old('answer12') == '1' ? 'selected' : '' }}>5</option>
+                                            <option value="0" {{ old('answer12') == '0' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -241,13 +241,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer13" value="{{ old('answer13') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer13') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer13') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer13') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer13') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer13') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer13') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer13') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -255,13 +255,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer14" value="{{ old('answer14') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer14') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer14') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer14') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer14') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer14') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer14') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer14') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -269,13 +269,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer15" value="{{ old('answer15') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer15') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer15') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer15') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer15') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer15') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer15') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer15') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -283,13 +283,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer16" value="{{ old('answer16') }}" requiredu>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer16') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer16') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer16') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer16') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer16') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer16') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer16') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -297,13 +297,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer17" value="{{ old('answer17') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="6">0</option>
-                                            <option value="5">1</option>
-                                            <option value="4">2</option>
-                                            <option value="3">3</option>
-                                            <option value="2">4</option>
-                                            <option value="1">5</option>
-                                            <option value="0">6</option>
+                                            <option value="6" {{ old('answer17') == '6' ? 'selected' : '' }}>0</option>
+                                            <option value="5" {{ old('answer17') == '5' ? 'selected' : '' }}>1</option>
+                                            <option value="4" {{ old('answer17') == '4' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer17') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="2" {{ old('answer17') == '2' ? 'selected' : '' }}>4</option>
+                                            <option value="1" {{ old('answer17') == '1' ? 'selected' : '' }}>5</option>
+                                            <option value="0" {{ old('answer17') == '0' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -311,13 +311,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer18" value="{{ old('answer18') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="6">0</option>
-                                            <option value="5">1</option>
-                                            <option value="4">2</option>
-                                            <option value="3">3</option>
-                                            <option value="2">4</option>
-                                            <option value="1">5</option>
-                                            <option value="0">6</option>
+                                            <option value="6" {{ old('answer18') == '6' ? 'selected' : '' }}>0</option>
+                                            <option value="5" {{ old('answer18') == '5' ? 'selected' : '' }}>1</option>
+                                            <option value="4" {{ old('answer18') == '4' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer18') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="2" {{ old('answer18') == '2' ? 'selected' : '' }}>4</option>
+                                            <option value="1" {{ old('answer18') == '1' ? 'selected' : '' }}>5</option>
+                                            <option value="0" {{ old('answer18') == '0' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -325,13 +325,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer19" value="{{ old('answer19') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="6">0</option>
-                                            <option value="5">1</option>
-                                            <option value="4">2</option>
-                                            <option value="3">3</option>
-                                            <option value="2">4</option>
-                                            <option value="1">5</option>
-                                            <option value="0">6</option>
+                                            <option value="6" {{ old('answer19') == '6' ? 'selected' : '' }}>0</option>
+                                            <option value="5" {{ old('answer19') == '5' ? 'selected' : '' }}>1</option>
+                                            <option value="4" {{ old('answer19') == '4' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer19') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="2" {{ old('answer19') == '2' ? 'selected' : '' }}>4</option>
+                                            <option value="1" {{ old('answer19') == '1' ? 'selected' : '' }}>5</option>
+                                            <option value="0" {{ old('answer19') == '0' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -339,13 +339,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer20" value="{{ old('answer20') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer20') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer20') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer20') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer20') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer20') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer20') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer20') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -353,13 +353,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer21" value="{{ old('answer21') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="6">0</option>
-                                            <option value="5">1</option>
-                                            <option value="4">2</option>
-                                            <option value="3">3</option>
-                                            <option value="2">4</option>
-                                            <option value="1">5</option>
-                                            <option value="0">6</option>
+                                            <option value="6" {{ old('answer21') == '6' ? 'selected' : '' }}>0</option>
+                                            <option value="5" {{ old('answer21') == '5' ? 'selected' : '' }}>1</option>
+                                            <option value="4" {{ old('answer21') == '4' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer21') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="2" {{ old('answer21') == '2' ? 'selected' : '' }}>4</option>
+                                            <option value="1" {{ old('answer21') == '1' ? 'selected' : '' }}>5</option>
+                                            <option value="0" {{ old('answer21') == '0' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
@@ -367,13 +367,13 @@
                                     <div class="col-sm-2 mb-1">
                                         <select class="form-select respuesta" aria-label="Default select example" name="answer22" value="{{ old('answer22') }}" required>
                                             <option value="">Elija</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
+                                            <option value="0" {{ old('answer22') == '0' ? 'selected' : '' }}>0</option>
+                                            <option value="1" {{ old('answer22') == '1' ? 'selected' : '' }}>1</option>
+                                            <option value="2" {{ old('answer22') == '2' ? 'selected' : '' }}>2</option>
+                                            <option value="3" {{ old('answer22') == '3' ? 'selected' : '' }}>3</option>
+                                            <option value="4" {{ old('answer22') == '4' ? 'selected' : '' }}>4</option>
+                                            <option value="5" {{ old('answer22') == '5' ? 'selected' : '' }}>5</option>
+                                            <option value="6" {{ old('answer22') == '6' ? 'selected' : '' }}>6</option>
                                         </select>
                                     </div>
 
